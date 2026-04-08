@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap-grid.min.css">
+</head>
+<body>
+
+  <style>
+body {
+    scroll-behavior: smooth;
+}
+
+.hero{
+    background: linear-gradient(135deg,#4facfe,#00f2fe);
+    color:white;
+    padding: 12px 0;
+    text-align: center;
+}
+
+.about{
+    background: #f8f9fa;
+}
+
+.gallery{
+    background:#eef6ff;
+}
+
+.gallery img{
+    height: 200px;
+    object-fit: cover;
+}
+
+.contact{
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    color:white;
+}
+
+.btn-custom{
+    background:#ff7b00;
+    color:white;
+}
+
+.btn-custom:hover{
+    background:#ebba00;
+}
+
+footer{
+    background:#222;
+}
+    </style>
+
+
+  <!--Navbar-->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">MyWebsite</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#navbarhome">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#navbarabout">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarallery" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Gallery
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#navbarcontact">Contact</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!--Home-->
+
+
+<section id="home" class="hero">
+  <div class="container">
+
+    <h1 class="display-4">Website Profil</h1>
+    <p class="lead">Ujian Praktik Membuat Website</p>
+
+    <a herf="#about" class="btn btn-light mt-3">Mulai</a>
+
+    </div>
+</section>
+
+<section id="about" class="about py-5">
+  <div class="container text-center">
+
+    <h2 class="mb-4">Tentang Saya</h2>
+
+    <img src="c:\Users\user\Documents\apa kek\foto ku.jpeg" class="rouded-circle mb-3">
+
+    <p>
+      Halo! Saya siswa kelas 9 yang sedang belajar memuat website menggunakan HTML dan bootstrap.
+      Website ini dibuat untuk ujian praktik informatika.
+    </p>
+</section>
+
+<!--Gallery-->
+
+<section id="gallery" class="gallery py-5">
+  <div class="container">
+
+    <h2 class="text-center mb-4">Gallery</h2>
+
+    <div class="row">
+
+      <div class="col-md-4">
+        <div class="card shadow">
+          <img src="c:\Users\user\Documents\apa kek\aku.jpeg" class="card-img-top">
+          <h5 class="card-title">Foto 1</h5>
+        </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 mb-4">
+    <div class="card shadow">
+      <img src="c:\Users\user\Documents\apa kek\aku melet.jpeg" class="card-img-top">
+      <div class="card-body text-center">
+        <h5 class="card-title">Foto 2</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 mb-4">
+    <div class="card shadow">
+      <img src="c:\Users\user\Documents\apa kek\ara dan aku.jpeg" class="card-img-top">
+      <div class="card-body text-center">
+        <h5 class="card-title">Foto 3</h5>
+      </div>
+    </div>
+    </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!--Contact-->
+
+<section id="contact" class="contact py-5">
+<div class="container">
+
+  <h2 class="text-center" mb-4>Contact</h2>
+
+  <div class="row justify-contact-center">
+    <div class="col-md-6">
+
+      <form class="bf-white- p-4 rounded text-dark">
+
+        <div class="mb-3">
+          <label>Nama</label>
+          <input type="text" class="form-control">
+          </div>
+
+          <div class="mb-3">
+            <label>Email</label>
+            <input type="email" class="form-control">
+          </div>
+
+          <div class="mb-3">
+            <label>Pesan</label>
+            <textarea class="btn btn-custom"></textarea>
+          </div>
+
+          <button class="btn btn-custom">Kirim</button>
+        
+
+        
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+</section>
+
+<footer class="text-center text-white p-3">
+<p> 2026 Website Ujian Praktik</p>
+</footer>
+
+</body>
+
+<script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+</html>>
